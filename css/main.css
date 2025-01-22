@@ -172,7 +172,7 @@ h1, h2, h3{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3.2rem 0;
+    padding: 1.5rem 0;
     z-index: 999;
 }
 
@@ -302,12 +302,20 @@ button [class ^= navbar]:hover{
 }
 
 .header-inner-right{
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Mencegah gambar keluar dari konten */
+    text-align: center; /* Mengatur posisi jika perlu */
 }
 
 .header-inner-right img {
-    max-width: 520px;
-    margin: 0 auto;
+    /* max-width: 520px;
+    margin: 0 auto; */
+    max-width: 100%; /* Membatasi gambar agar tidak melebihi ukuran kontainer */
+    height: auto; /* Menjaga aspek rasio gambar */
+    object-fit: contain; /* Menghindari pemotongan gambar */
+    margin: 0 auto; /* Menjaga gambar tetap terpusat */
 
 }
 
@@ -352,9 +360,14 @@ button [class ^= navbar]:hover{
     .header-inner-left .btn-group{
         justify-content: start;
     }
+    .header-inner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
     .header-inner-right img {
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
+        object-fit: contain;
     }
     
 }
@@ -444,7 +457,15 @@ button [class ^= navbar]:hover{
     }
     .header-inner-right img{
         padding-left: 0;
-        max-width: 647px;
+        max-width: 550px;
+    }
+
+    @media(min-width: 1480px) {
+        /* general */
+        .container{
+            max-width: 81vw;
+        }
+        
     }
 
     .services-inner{
