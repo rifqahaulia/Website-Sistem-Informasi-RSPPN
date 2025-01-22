@@ -319,6 +319,7 @@ button [class ^= navbar]:hover{
 
 }
 
+/* about section */
 /* Media Queries */
 @media(min-width: 450px){
     .navbar-collapse{
@@ -343,10 +344,10 @@ button [class ^= navbar]:hover{
 
 @media(min-width: 992px){
     .header-inner{
-        padding-top: 3.2rem;
+        padding-top: 3.2em;
     }
     .header-inner .container{
-        grid-template-columns: 545px auto;
+        grid-template-columns: 730px auto;
         align-items: center;
         height: calc(100vh - 32px);
         position: relative;
