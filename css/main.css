@@ -6,6 +6,7 @@
     --light-blue-color: #16c5ff;
     --dark-color: #202020;
     --light-gray: #dedede;
+    --dark-gray: #a1a1a0;
     --light-color: #fff;
     --poppins-font: 'poppins', sans-serif;
     --transition: all 0.3s ease-in-out;
@@ -320,6 +321,64 @@ button [class ^= navbar]:hover{
 }
 
 /* about section */
+.section-head h2{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.border-line{
+    height: .4rem; /* menentukan tinggi elemen */
+    width: 100%;
+    margin-right: auto; 
+    margin-left: auto;
+    background-color: var(--light-gray);
+    position: relative;
+}
+.border-line::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 102px;
+    background-color: var(--light-blue-color);
+}
+.about-left{
+    margin-bottom: 3rem;
+}
+.about-right{
+    margin-top: 10.5rem;
+}
+.about-left .text{
+    margin: 5.6rem 0;
+    line-height: 2.3;
+}
+.about .btn-white{
+    color: var(--fros-blue-color);
+}
+.about-right .img{
+    width: 100%;
+    max-width: 878px;
+    position: relative;
+}
+.about-right .img img{
+    padding-top: 4.3rem;
+    transform: scaleX(1.03);
+}
+.about-right .img::after{
+    top: -56px;
+    left: 0;
+    background-color: #0060ff;
+    z-index: -1;
+}
+.about-right .img::before{
+    top: -112px;
+    left: 0;
+    background-color: var(--fros-blue-color);
+    z-index: -2;
+}
 /* Media Queries */
 @media(min-width: 450px){
     .navbar-collapse{
@@ -370,7 +429,10 @@ button [class ^= navbar]:hover{
         height: auto;
         object-fit: contain;
     }
-    
+    /* ngatur responsif class about */
+    .about-inner .container{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(min-width: 1200px){
