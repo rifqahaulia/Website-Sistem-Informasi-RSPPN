@@ -327,6 +327,7 @@ button [class ^= navbar]:hover{
     margin-bottom: 3rem;
     text-align: center;
 }
+/* bagian garis bawah about us */
 .border-line{
     height: .4rem; /* menentukan tinggi elemen */
     width: 100%;
@@ -365,7 +366,8 @@ button [class ^= navbar]:hover{
     position: relative;
 }
 .about-right .img img{
-    padding-top: 7.5rem;
+    padding-top: 10rem;
+    transform: scaleX(1);
 }
 .about-right .img::after, .about-right .img::before{
     content: "";
@@ -397,6 +399,9 @@ button [class ^= navbar]:hover{
     .btn-group:first-child{
         margin-right: 48px;
         margin-bottom: 0;
+    }
+    .border-line{
+        width: 405px;
     }
 
 }
@@ -443,7 +448,8 @@ button [class ^= navbar]:hover{
     /* ngatur responsif class about */
     .about-inner .container{ 
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 23.5rem;
+        /* column-gap: 23.5rem; */
+        column-gap: 3rem;
     }
     .about-left{
         text-align: left;
@@ -460,7 +466,7 @@ button [class ^= navbar]:hover{
         transform: translateX(0);
     }
     .about-right{
-        margin-right: auto;
+        margin-left: auto;
         margin-top: 11.2rem;
     }
 }
