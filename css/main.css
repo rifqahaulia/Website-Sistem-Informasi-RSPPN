@@ -2,6 +2,10 @@
 
 /* variable */
 :root{
+    --e-global-color-accent: #4FB2E5;
+    --e-global-color-dbc07a0: #2F6E89;
+    --e-global-color-aaad7ba: #FFFFFF;
+    --e-global-color-0bc8a88: #DCF0FA;
     --fros-blue-color: #0050d5;
     --light-blue-color: #16c5ff;
     --dark-color: #202020;
@@ -45,7 +49,7 @@ a{
 }
 
 .bg-blue{
-    background-color: var(--fros-blue-color);
+    background-color: #A52A2A ;
 }
 
 .bg-white{
@@ -59,6 +63,8 @@ a{
 .text-white{
     color: var(--light-color);
 }
+
+
 
 /* button */
 .btn, button{
@@ -148,7 +154,8 @@ h1, h2, h3{
 
 .text-lg{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 485;
+    text-align: justify;
 }
 
 .text-sm{
@@ -289,6 +296,8 @@ button [class ^= navbar]:hover{
 
 .header-inner-left .lead{
     opacity: 0.9;
+    font-family: "Garamond", Times, serif;
+
 }
 
 .header-inner-left .text{
@@ -296,6 +305,7 @@ button [class ^= navbar]:hover{
     max-width: 500px;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .header-inner-left .btn-group{
@@ -361,7 +371,7 @@ button [class ^= navbar]:hover{
 }
 .about-right .img{
     width: 100%;
-    background-color: #3983fe;
+    background-color: #e11313;
     max-width: 537px;
     position: relative;
 }
@@ -378,24 +388,25 @@ button [class ^= navbar]:hover{
 .about-right .img::after{
     top: -56px;
     left: 0;
-    background-color: #0060ff;
+    background-color: #af0d0d;
     z-index: -1;
 }
 .about-right .img::before{
     top: -112px;
     left: 0;
-    background-color: var(--fros-blue-color);
+    background-color: #A52A2A;
     z-index: -2;
 }
 
 /* benner one section */
 .banner-one {
     /* atur gambar latar belakang dengan overlay gradasi linier  */
-    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), 
-                url('../images/banner-1-img.png') no-repeat top;
-    background-size: cover;
+    background: linear-gradient(rgba(90, 80, 80, 0.559), rgba(202, 202, 202, 0.5)), 
+            url('../images/banner-1-img.png') no-repeat top;
+background-size: cover;
+
     /* mengatur tinggi kontainer dan pusatkan konten */
-    height: 688px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
