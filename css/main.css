@@ -400,16 +400,32 @@ button [class ^= navbar]:hover{
 
 /* benner one section */
 .banner-one {
+
     /* atur gambar latar belakang dengan overlay gradasi linier  */
-    background: linear-gradient(rgba(90, 80, 80, 0.559), rgba(202, 202, 202, 0.5)), 
+    background: linear-gradient(rgba(139, 69, 19, 0.9), rgba(92, 51, 23, 0.9)), 
             url('../images/banner-1-img.png') no-repeat top;
 background-size: cover;
-
     /* mengatur tinggi kontainer dan pusatkan konten */
-    height: 700px;
+    height: 555px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    .banner-one .lead{
+        font-size: 2.8rem;
+        font-weight: 500;
+        max-width: 600px;
+    }
+    .banner-one .text-sm{
+        font-weight: 500;
+    }
 }
 
 
