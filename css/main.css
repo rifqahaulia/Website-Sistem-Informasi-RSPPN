@@ -190,7 +190,7 @@ h1, h2, h3{
 
 /* ngatur besar kecilnya logo */
 .navbar-brand img {
-    width: 89px;
+    width: 270px;
 }
 
 .navbar-show-btn, .navbar-hide-btn{
@@ -400,18 +400,18 @@ button [class ^= navbar]:hover{
 
 /* benner one section */
 .banner-one {
-
     /* atur gambar latar belakang dengan overlay gradasi linier  */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 134, 11, 0.9)), to(rgba(139, 69, 19, 0.85))), url('../images/banner-1-img.png') top/cover no-repeat;
+    background: -o-linear-gradient(rgba(184, 134, 11, 0.9), rgba(139, 69, 19, 0.85)), url('../images/banner-1-img.png') top/cover no-repeat;
     background: linear-gradient(rgba(139, 69, 19, 0.9), rgba(92, 51, 23, 0.9)), 
             url('../images/banner-1-img.png') no-repeat top;
-background-size: cover;
+    background-size: cover;
+
     /* mengatur tinggi kontainer dan pusatkan konten */
     height: 555px;
+    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -426,6 +426,174 @@ background-size: cover;
     .banner-one .text-sm{
         font-weight: 500;
     }
+}
+
+/* Services Section */
+.services .section-head .text-center{
+    color: var(--dark-gray);
+    margin-top: -2rem;
+}
+.services .section-head img{
+    margin: 3.7rem auto;
+}
+.line-art{
+    max-width: 240px;
+    margin: auto;
+}
+.line-art img{
+    width: 30px;
+}
+.line-art div{
+    width: 100px;
+    height: 2px;
+    background-color: var(--light-gray);
+}
+.services-inner{
+    padding: 6rem 0;
+}
+.service-item{
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+.service-item:last-child{
+    margin-bottom: 0;
+}
+.service-item .icon img{
+    width: 80px;
+    margin: auto;
+}
+.service-item h3{
+    margin: 5rem 0;
+    opacity: 0.7;
+}
+
+/* Contact Section */
+.contact-left{
+    margin-bottom: 6rem;
+    height: 100%;
+}
+.contact-left iframe{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.contact-right{
+    padding: 5rem 4rem;
+}
+.contact-right form{
+    margin-top: 5rem;
+}
+.form-element .form-control{
+    width: 100%;
+    background-color: #4e4b4b;
+    border: none;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    margin-bottom: 1.6rem;
+    color: var(--light-color);
+}
+.form-element .form-control::-webkit-input-placeholder{
+    color: var(--light-color);
+}
+.form-element .form-control::-moz-placeholder{
+    color: var(--light-color);
+}
+.form-element .form-control:-ms-input-placeholder{
+    color: var(--light-color);
+}
+.form-element .form-control::-ms-input-placeholder{
+    color: var(--light-color);
+}
+.form-element .form-control::placeholder{
+    color: var(--light-color);
+}
+.btn-submit{
+    margin-top: 4rem;
+}
+.btn-submit i{
+    margin-right: 2rem;
+}
+
+/* footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer-item{
+    margin-bottom: 6rem;
+}
+.footer-item:last-child{
+    margin-bottom: 0;
+}
+.footer-head{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+.footer-item .icon{
+    width: 255px;
+    margin: auto;
+}
+.footer-item .text{
+    padding: 3rem 0;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-item address{
+    font-size: 1.5rem;
+    font-style: normal;
+}
+.footer-item .tags-list{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.footer-item .tags-list li{
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    background-color: rgb(58, 58, 58);
+    border-radius: .4rem;
+}
+.footer-item a{
+    margin-bottom: 1rem;
+    display: inline-block;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+}
+.footer-item a:hover{
+    color: var(--dark-gray);
+}
+.footer-item:last-child .text{
+    padding-top: 0;
+}
+.footer-item .appointment-info li{
+    margin: 1rem 0;
+}
+.footer-item .appointment-info li span{
+    margin-left: 1rem;
+}
+.footer-links{
+    border-top: 2px solid var(--dark-gray);
+    padding: 4.5rem 0;
+}
+.footer-links li{
+    margin: 0 2.4rem;
+    font-size: 2rem;
+}
+.footer-links li a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+}
+.footer-links li a:hover{
+    background-color: var(--light-color);
+    color: var(--fros-blue-color);
 }
 
 
@@ -509,6 +677,10 @@ background-size: cover;
     .about-right{
         margin-left: auto;
         margin-top: 11.2rem;
+    }
+    .contact .container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.4rem;
     }
 }
 
