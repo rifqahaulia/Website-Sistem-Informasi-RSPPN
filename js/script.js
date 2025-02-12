@@ -31,3 +31,12 @@ window.addEventListener('resize', () =>{
         document.body.classList.remove('resize-animation-stopper');
     }, 400);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".dropdown");
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener("click", function () {
+            this.querySelector(".dropdown-menu").classList.toggle("show");
+        });
+    });
+});
