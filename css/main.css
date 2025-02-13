@@ -279,6 +279,12 @@ button [class ^= navbar]:hover{
 }
 
 /* Dropdown */
+
+.dropdown-arrow{
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform .4s;
+}
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -288,10 +294,24 @@ button [class ^= navbar]:hover{
     padding: 10px 0;
     border-radius: 15px;
     top: 100%;
-    left: 29%;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
     min-width: 220px;
     z-index: 1000;
+    margin-top: 5px;
+    transform: translateY(-10%); 
 }
+
+.dropdown-toggle .ri-arrow-down-s-line {
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+.nav-item.dropdown {
+    position: relative;
+}
+
 
 .dropdown-item {
     color: black;
@@ -299,6 +319,11 @@ button [class ^= navbar]:hover{
     text-decoration: none;
     display: block;
     white-space: nowrap;
+}
+
+.dropdown-menu.show {
+    display: block;
+    /* z-index: 999; */
 }
 
 /* Menampilkan dropdown saat di-hover */
@@ -310,6 +335,11 @@ button [class ^= navbar]:hover{
 .dropdown-submenu {
     position: relative;
 }
+
+.dropdown {
+    position: relative;
+}
+
 
 .dropdown-submenu .dropdown-menu {
     top: 0;
@@ -323,9 +353,9 @@ button [class ^= navbar]:hover{
     display: block;
 }
 
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
     display: block;
-}
+} */
 
 /* header inner */
 .header-inner{

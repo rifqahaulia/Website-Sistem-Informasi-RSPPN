@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSPPN</title>
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize css -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- custom css -->
+      <link rel="stylesheet" href="css/main.css">
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+<header class="header bg-blue">
+    <nav class="navbar bg-blue">
+        <div class="container flex">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Site Logo">
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button type="button" class="navbar-show-btn" aria-label="Open Menu">
+                <img src="images/ham-menu-icon.png" alt="Menu Icon">
+            </button>
+
+            <!-- Navigasi Utama -->
+            <div class="navbar-collapse bg-white ">
+                <!-- Close Button -->
+                <button type="button" class="navbar-hide-btn" aria-label="Close Menu">
+                    <img src="images/close-icon.png" alt="Close Icon">
+                </button>
+
+                <!-- Menu List -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+
+                    <!-- Dropdown Komkordik -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Komkordik <i class="ri-arrow-down-s-line"></i> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profil.html" class="dropdown-item">Profil Komkordik</a></li>
+                            <li><a href="visimisi.html" class="dropdown-item">Visi & Misi</a></li>
+                            <li><a href="pendidikan.html" class="dropdown-item">Program Pendidikan</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="sop.html" class="nav-link">SOP</a></li>
+                    <li class="nav-item"><a href="penelitian.html" class="nav-link">Penelitian</a></li>
+                    <li class="nav-item"><a href="agenda.html" class="nav-link">Agenda</a></li>
+                    <li class="nav-item"><a href="fasilitas.html" class="nav-link">Fasilitas</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <form>
+                        <div class="search-bar-box flex">
+                            <span class="search-icon flex">
+                                <img src="images/search-icon-dark.png" alt="Search Icon">
+                            </span>
+                            <input type="search" class="search-control" placeholder="Search here">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <!-- Isi Konten -->
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero bg-blue text-white py-4">
+                <div class="container">
+                    <h1 class="text-4xl font-bold mb-4">Sejarah Komkordik</h1>
+                    <p class="text-lg">
+                        Komkordik RSPPN Soedirman didirikan untuk mengkoordinasikan pendidikan kedokteran, 
+                        keperawatan, dan profesi kesehatan lainnya. Sejak berdirinya, kami telah bekerja 
+                        sama dengan berbagai institusi pendidikan dalam penyelenggaraan program akademik 
+                        dan profesional.
+                    </p>
+                </div>
+            </section>
+    
+            <!-- Struktur Organisasi -->
+            <section class="py-4">
+                <div class="container">
+                    <h2 class="text-3xl font-bold mb-4 text-center">Struktur Organisasi</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="card">
+                            <h3 class="font-bold">Ketua Komkordik</h3>
+                            <p>[Nama Ketua]</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="font-bold">Sekretaris Komkordik</h3>
+                            <p>[Nama Sekretaris]</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="font-bold">Koordinator Program Pendidikan</h3>
+                            <p>[Nama Koordinator]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Tugas & Fungsi -->
+            <section class="py-4 bg-gray-100">
+                <div class="container">
+                    <h2 class="text-3xl font-bold mb-4">Tugas & Fungsi</h2>
+                    <ul class="list-disc pl-5">
+                        <li>Mengelola program pendidikan klinik di rumah sakit.</li>
+                        <li>Menjamin mutu pendidikan dan pelatihan klinis.</li>
+                        <li>Menjalin kolaborasi dengan universitas dan lembaga pelatihan kesehatan.</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Regulasi & Kebijakan -->
+            <section class="py-4">
+                <div class="container">
+                    <h2 class="text-3xl font-bold mb-4">Regulasi & Kebijakan</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="card">
+                            <h3 class="font-bold">Peraturan Menteri Kesehatan</h3>
+                            <p>No. XXX Tahun XXXX tentang pendidikan profesi tenaga kesehatan.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="font-bold">SOP Pendidikan</h3>
+                            <p>SOP Pendidikan Klinik RSPPN Soedirman.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <!-- footer  -->
+    <footer id = "footer" class = "footer text-center">
+        <div class = "container">
+            <div class = "footer-inner text-white py grid">
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Tentang Kami</h3>
+                    <div class = "icon">
+                        <img src = "images/logo.png">
+                    </div>
+                    <p class = "text text-md">RSPPN melaksanakan pelayanan medik, penunjang medik, dan rehabilitasi medik secara terpadu, 
+                        serta penelitian dan pengembangan dengan kekhususan rehabilitasi medik komprehensif sesuai dengan ketentuan peraturan perundang-undangan.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">tags</h3>
+                    <ul class = "tags-list flex">
+                        <li>medical care</li>
+                        <li>emergency</li>
+                        <li>therapy</li>
+                        <li>surgery</li>
+                        <li>medication</li>
+                        <li>nurse</li>
+                    </ul>
+                </div>
+
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Quick Links</h3>
+                    <ul>
+                        <li><a href = "#" class = "text-white">Our Services</a></li>
+                        <li><a href = "#" class = "text-white">Our Plan</a></li>
+                        <li><a href = "#" class = "text-white">Privacy Policy</a></li>
+                        <li><a href = "#" class = "text-white">Appointment Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Hubungi Kami</h3>
+                    <p class = "text text-md"> Alamat: RSPPN Soedirman, Kementerian Pertahanan RI (Jalan RC Veteran No.178 Bintaro Pesanggrahan Jakarta Selatan)</p>
+                        <li>
+                            <i class = "fas fa-envelope"></i>
+                            <span>komkordik@rsppn.co.id</span>
+                        </li>
+                        <li> 
+                            <i class = "fas fa-phone"></i>
+                            <span>(021) XXXXXX</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "footer-links">
+                <ul class = "flex">
+                    <li><a href="https://www.instagram.com/rsppnsoedirman.id" target="_blank" class = "text-white flex"> <i class = "fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@RSPPNSoedirmanKemhanRI"" class = "text-white flex"> <i class = "fab fa-youtube"></i></a></li>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer  -->
+
+    <!-- custom js -->
+     <script src="js/script.js"> </script>
+
+     
+</body>
+</html>
