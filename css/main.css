@@ -171,9 +171,6 @@ h1, h2, h3{
 }
 
 /* header */
-.header{
-    min-height: 100vh;
-}
 
 .navbar{
     position: fixed;
