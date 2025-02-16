@@ -3,126 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sejarah Komkordik - RSPPN</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Program Pendidikan</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- normalize css -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
-    
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <style>
-        .history-content {
-            padding-top: 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .history-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem 0;
-        }
-
-        .history-header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: white;
-        }
-
-        .card {
-            background: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 2rem;
-            color: white;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .section-title {
-            color: #FFD700;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .section-title i {
-            font-size: 1.8rem;
-        }
-
-        .history-text {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border-left: 4px solid #FFD700;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 0 10px 10px 0;
-        }
-
-        .organization-structure {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .org-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1.5rem;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .org-item:hover {
-            transform: scale(1.02);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .org-item i {
-            color: #FFD700;
-            font-size: 1.5rem;
-        }
-
-        .duties-list, .regulation-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .duties-list li, .regulation-list li {
-            margin-bottom: 1rem;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .duties-list li:hover, .regulation-list li:hover {
-            transform: scale(1.02);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .duties-list li i, .regulation-list li i {
-            color: #FFD700;
-        }
-
-        /* Header styles for consistency */
         .header {
             background: linear-gradient(135deg, #A52A2A, #8B0000);
             min-height: auto;
@@ -134,22 +26,92 @@
             z-index: 2;
         }
 
+        .education-content {
+            padding-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .education-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .education-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        .program-card {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .program-title {
+            color: #FFD700;
+            font-size: 1.7rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .program-title i {
+            font-size: 1.8rem;
+        }
+
+        .program-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .specialization-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .specialization-list li {
+            margin-bottom: 0.8rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .specialization-list li:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .specialization-list li i {
+            color: #FFD700;
+        }
+
         /* Dropdown styles */
         .nav-item.dropdown {
             position: relative;
-        }
-
-        .dropdown-toggle::after {
-            content: '';
-            display: inline-block;
-            width: 0.5em;
-            height: 0.5em;
-            margin-left: 0.5em;
-            vertical-align: middle;
-            border-top: 0.3em solid;
-            border-right: 0.3em solid transparent;
-            border-bottom: 0;
-            border-left: 0.3em solid transparent;
         }
 
         .dropdown-menu {
@@ -183,38 +145,48 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar bg-blue">
+        <nav class="navbar">
             <div class="container flex">
+                <!-- Logo -->
                 <a href="index.html" class="navbar-brand">
                     <img src="images/logo.png" alt="Site Logo">
                 </a>
-
+    
+                <!-- Hamburger Menu Button -->
                 <button type="button" class="navbar-show-btn" aria-label="Open Menu">
                     <img src="images/ham-menu-icon.png" alt="Menu Icon">
                 </button>
-
-                <div class="navbar-collapse bg-white">
+    
+                <!-- Navigasi Utama -->
+                <div class="navbar-collapse">
+                    <!-- Close Button -->
                     <button type="button" class="navbar-hide-btn" aria-label="Close Menu">
                         <img src="images/close-icon.png" alt="Close Icon">
                     </button>
-
+    
+                    <!-- Menu List -->
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+    
+                        <!-- Dropdown Komkordik -->
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle">Komkordik</a>
+                            <a href="#" class="nav-link dropdown-toggle">Komkordik <i class="ri-arrow-down-s-line"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="profil.html" class="dropdown-item">Profil Komkordik</a></li>
                                 <li><a href="visimisi.html" class="dropdown-item">Visi & Misi</a></li>
                                 <li><a href="pendidikan.html" class="dropdown-item">Program Pendidikan</a></li>
                             </ul>
                         </li>
+    
                         <li class="nav-item"><a href="sop.html" class="nav-link">SOP</a></li>
                         <li class="nav-item"><a href="penelitian.html" class="nav-link">Penelitian</a></li>
                         <li class="nav-item"><a href="agenda.html" class="nav-link">Agenda</a></li>
                         <li class="nav-item"><a href="fasilitas.html" class="nav-link">Fasilitas</a></li>
                     </ul>
-
+    
+                    <!-- Search Bar -->
                     <div class="search-bar">
                         <form>
                             <div class="search-bar-box flex">
@@ -228,104 +200,140 @@
                 </div>
             </div>
         </nav>
-
-        <div class="history-content">
+        
+        <!-- Isi Konten -->
+        <div class="education-content">
             <div class="container">
-                <div class="history-header">
-                    <h1>Sejarah Komkordik</h1>
+                <div class="education-header">
+                    <h1>Program Pendidikan</h1>
                 </div>
-
+                
                 <div class="content-wrapper">
-                    <!-- Sejarah Section -->
-                    <section class="card">
-                        <h2 class="section-title">
-                            <i class="fas fa-history"></i>
-                            Sejarah
+                    <!-- Pendidikan Dokter Umum -->
+                    <section class="program-card">
+                        <h2 class="program-title">
+                            <i class="fas fa-user-md"></i>
+                            Pendidikan Dokter Umum
                         </h2>
-                        <div class="history-text">
-                            Komkordik RSPPN Soedirman didirikan untuk mengkoordinasikan pendidikan kedokteran, keperawatan, dan profesi kesehatan lainnya. Sejak berdirinya, kami telah bekerja sama dengan berbagai institusi pendidikan dalam penyelenggaraan program akademik dan profesional.
+                        <div class="program-description">
+                            Program ini bertujuan untuk memberikan pengalaman klinis kepada mahasiswa kedokteran dalam rangka memenuhi kompetensi akademik mereka.
                         </div>
                     </section>
 
-                    <!-- Struktur Organisasi Section -->
-                    <section class="card">
-                        <h2 class="section-title">
-                            <i class="fas fa-sitemap"></i>
-                            Struktur Organisasi
+                    <!-- Pendidikan Dokter Spesialis -->
+                    <section class="program-card">
+                        <h2 class="program-title">
+                            <i class="fas fa-stethoscope"></i>
+                            Pendidikan Dokter Spesialis
                         </h2>
-                        <div class="organization-structure">
-                            <div class="org-item">
-                                <i class="fas fa-user-tie"></i>
-                                <div>
-                                    <strong>Ketua Komkordik:</strong>
-                                    <div>[Nama Ketua]</div>
-                                </div>
-                            </div>
-                            <div class="org-item">
-                                <i class="fas fa-user-edit"></i>
-                                <div>
-                                    <strong>Sekretaris Komkordik:</strong>
-                                    <div>[Nama Sekretaris]</div>
-                                </div>
-                            </div>
-                            <div class="org-item">
-                                <i class="fas fa-user-graduate"></i>
-                                <div>
-                                    <strong>Koordinator Program Pendidikan:</strong>
-                                    <div>[Nama Koordinator]</div>
-                                </div>
-                            </div>
+                        <div class="program-description">
+                            Komkordik RSPPN Soedirman menjadi rumah sakit jejaring untuk berbagai program spesialis seperti:
                         </div>
-                    </section>
-
-                    <!-- Tugas & Fungsi Section -->
-                    <section class="card">
-                        <h2 class="section-title">
-                            <i class="fas fa-tasks"></i>
-                            Tugas & Fungsi
-                        </h2>
-                        <ul class="duties-list">
+                        <ul class="specialization-list">
                             <li>
-                                <i class="fas fa-check-circle"></i>
-                                Mengelola program pendidikan klinik di rumah sakit.
+                                <i class="fas fa-procedures"></i>
+                                Spesialis Bedah
                             </li>
                             <li>
-                                <i class="fas fa-check-circle"></i>
-                                Menjamin mutu pendidikan dan pelatihan klinis.
+                                <i class="fas fa-heartbeat"></i>
+                                Spesialis Penyakit Dalam
                             </li>
                             <li>
-                                <i class="fas fa-check-circle"></i>
-                                Menjalin kolaborasi dengan universitas dan lembaga pelatihan kesehatan.
+                                <i class="fas fa-syringe"></i>
+                                Spesialis Anestesi
                             </li>
                         </ul>
                     </section>
 
-                    <!-- Regulasi & Kebijakan Section -->
-                    <section class="card">
-                        <h2 class="section-title">
-                            <i class="fas fa-gavel"></i>
-                            Regulasi & Kebijakan
+                    <!-- Pendidikan Perawat & Tenaga Kesehatan -->
+                    <section class="program-card">
+                        <h2 class="program-title">
+                            <i class="fas fa-user-nurse"></i>
+                            Pendidikan Perawat & Tenaga Kesehatan Lainnya
                         </h2>
-                        <ul class="regulation-list">
-                            <li>
-                                <i class="fas fa-file-alt"></i>
-                                Peraturan Menteri Kesehatan No. XXX Tahun XXXX tentang pendidikan profesi tenaga kesehatan.
-                            </li>
-                            <li>
-                                <i class="fas fa-file-alt"></i>
-                                SOP Pendidikan Klinik RSPPN Soedirman.
-                            </li>
-                        </ul>
+                        <div class="program-description">
+                            Kami menyelenggarakan program pendidikan bagi perawat, bidan, dan tenaga kesehatan lainnya dalam bentuk praktik klinik dan pelatihan kompetensi.
+                        </div>
+                    </section>
+
+                    <!-- Program Magang & Observasi -->
+                    <section class="program-card">
+                        <h2 class="program-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Program Magang & Observasi
+                        </h2>
+                        <div class="program-description">
+                            Bagi mahasiswa yang ingin melakukan magang atau observasi, tersedia berbagai program sesuai kebutuhan akademik dan profesional mereka.
+                        </div>
                     </section>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- footer  -->
     <footer id="footer" class="footer text-center">
-        <!-- Your existing footer code -->
-    </footer>
+        <div class="container">
+            <div class="footer-inner text-white py grid">
+                <div class="footer-item">
+                    <h3 class="footer-head">Tentang Kami</h3>
+                    <div class="icon">
+                        <img src="images/logo.png">
+                    </div>
+                    <p class="text text-md">RSPPN melaksanakan pelayanan medik, penunjang medik, dan rehabilitasi medik secara terpadu, 
+                        serta penelitian dan pengembangan dengan kekhususan rehabilitasi medik komprehensif sesuai dengan ketentuan peraturan perundang-undangan.</p>
+                </div>
 
+                <div class="footer-item">
+                    <h3 class="footer-head">tags</h3>
+                    <ul class="tags-list flex">
+                        <li>medical care</li>
+                        <li>emergency</li>
+                        <li>therapy</li>
+                        <li>surgery</li>
+                        <li>medication</li>
+                        <li>nurse</li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3 class="footer-head">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="text-white">Our Services</a></li>
+                        <li><a href="#" class="text-white">Our Plan</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Appointment Schedule</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3 class="footer-head">Hubungi Kami</h3>
+                    <p class="text text-md">Alamat: RSPPN Soedirman, Kementerian Pertahanan RI (Jalan RC Veteran No.178 Bintaro Pesanggrahan Jakarta Selatan)</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>komkordik@rsppn.co.id</span>
+                        </li>
+                        <li> 
+                            <i class="fas fa-phone"></i>
+                            <span>(021) XXXXXX</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <ul class="flex">
+                    <li><a href="https://www.instagram.com/rsppnsoedirman.id" target="_blank" class="text-white flex"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@RSPPNSoedirmanKemhanRI" class="text-white flex"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer  -->
+
+    <!-- custom js -->
     <script src="js/script.js"></script>
 </body>
 </html>
+
