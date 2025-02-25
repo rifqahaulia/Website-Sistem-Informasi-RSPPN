@@ -10,18 +10,6 @@ navbarHideBtn.addEventListener('click', function(){
     navbarCollapseDiv.classList.remove('navbar-show');
 });
 
-// mengubah gambar ikon pencarian saat mengubah ukuran window
-window.addEventListener('resize', changeSearchIcon);
-function changeSearchIcon(){
-    let winSize = window.matchMedia("(min-width: 1200px)");
-    if(winSize.matches){
-        document.querySelector('.search-icon img').src = "images/search-icon.png";
-    } else {
-        document.querySelector('.search-icon img').src = "images/search-icon-dark.png";
-    }
-}
-changeSearchIcon();
-
 // stopping all animation and transition
 let resizeTimer;
 window.addEventListener('resize', () =>{
