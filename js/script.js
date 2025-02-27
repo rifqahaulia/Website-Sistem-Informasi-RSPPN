@@ -40,5 +40,3 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
         menu.classList.remove('show');
     });
 });
-
-
