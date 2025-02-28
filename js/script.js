@@ -40,3 +40,56 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
         menu.classList.remove('show');
     });
 });
+
+
+// Data Dummy 
+const articles = [
+    { title: "Perawatan Medis Dasar", tags: ["medical care", "nurse"] },
+    { title: "Tindakan Darurat di IGD", tags: ["emergency", "surgery"] },
+    { title: "Terapi Pasca Operasi", tags: ["therapy", "medication"] },
+    { title: "Penanganan Cedera Serius", tags: ["surgery", "medical care"] }
+];
+
+// Pastikan elemen ada sebelum menambahkan event listener
+document.addEventListener("DOMContentLoaded", function () {
+    const tagListItems = document.querySelectorAll('.tags-list li');
+    const resultContainer = document.getElementById('searchResults');
+
+    if (!resultContainer) {
+        console.error("Elemen #searchResults tidak ditemukan di HTML.");
+        return;
+    }
+
+    // Event Listener untuk Klik Tag
+    tagListItems.forEach(tag => {
+        tag.addEventListener('click', function () {
+            let selectedTag = this.dataset.tag.trim().toLowerCase();
+            console.log("Tag diklik:", selectedTag); // Debugging
+            searchByTag(selectedTag);
+        });
+    });
+});
+
+// Fungsi Pencarian berdasarkan Tag
+function searchByTag(tag) {
+    let results = articles.filter(article =>
+        article.tags.some(t => t.toLowerCase() === tag) // Hanya cocokkan tag persis
+    );
+
+    let resultContainer = document.getElementById('searchResults');
+    resultContainer.innerHTML = "";
+
+    if (results.length === 0) {
+        resultContainer.innerHTML = "<p>Tidak ada hasil ditemukan</p>";
+        return;
+    }
+
+    let ul = document.createElement('ul'); // Buat list agar lebih rapi
+    results.forEach(article => {
+        let li = document.createElement('li');
+        li.textContent = article.title;
+        ul.appendChild(li);
+    });
+
+    resultContainer.appendChild(ul);
+}
