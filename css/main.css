@@ -287,18 +287,9 @@ button [class ^= navbar]:hover{
     display: none;
     position: absolute;
     background: white;
-    /* list-style: none;
-    padding: 10px 0;
-    border-radius: 15px;
-    top: 100%;
-    left: 0 !important;
-    right: auto !important;
-    transform: none !important; */
     min-width: 160px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    /* margin-top: 5px; */
-    /* transform: translateY(-10%);  */
 }
 
 .dropdown-toggle .ri-arrow-down-s-line {
@@ -399,8 +390,6 @@ button [class ^= navbar]:hover{
 }
 
 .header-inner-right img {
-    /* max-width: 520px;
-    margin: 0 auto; */
     max-width: 100%; /* Membatasi gambar agar tidak melebihi ukuran kontainer */
     height: auto; /* Menjaga aspek rasio gambar */
     object-fit: contain; /* Menghindari pemotongan gambar */
