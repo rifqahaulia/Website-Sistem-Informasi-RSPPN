@@ -70,26 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Fungsi Pencarian berdasarkan Tag
-function searchByTag(tag) {
-    let results = articles.filter(article =>
-        article.tags.some(t => t.toLowerCase() === tag) // Hanya cocokkan tag persis
-    );
 
-    let resultContainer = document.getElementById('searchResults');
-    resultContainer.innerHTML = "";
-
-    if (results.length === 0) {
-        resultContainer.innerHTML = "<p>Tidak ada hasil ditemukan</p>";
-        return;
-    }
-
-    let ul = document.createElement('ul'); // Buat list agar lebih rapi
-    results.forEach(article => {
-        let li = document.createElement('li');
-        li.textContent = article.title;
-        ul.appendChild(li);
-    });
-
-    resultContainer.appendChild(ul);
-}
